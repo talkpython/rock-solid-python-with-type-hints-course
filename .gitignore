@@ -159,3 +159,5 @@ cython_debug/
 #  option (not recommended) you can uncomment the following to ignore the entire idea folder.
 #.idea/
 /.idea/
+/code/02-static-vs-dynamic-languages/node_modules/.package-lock.json
+node_modules/
