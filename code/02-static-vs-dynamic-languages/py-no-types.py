@@ -36,5 +36,5 @@ if __name__ == '__main__':
     print("Here are some bikes!")
     for b in bikes:
         print(b)
-        # Duck type: Motorcycles have a string mobel and a truthy can_jump.
+        # Duck type: Motorcycles have a string model and a truthy can_jump.
         print(f'The {b.model} can{"" if b.can_jump else "NOT" } jump.')
