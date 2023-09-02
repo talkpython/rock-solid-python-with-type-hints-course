@@ -1,4 +1,5 @@
 import enum
+import typing
 
 
 class MotorcycleType(enum.StrEnum):
@@ -29,7 +30,7 @@ class Motorcycle:
                 f'off-road: {self.off_road}, can jump: {self.can_jump}')
 
     @classmethod
-    def create_adventure(cls, model: str, engine_size: int):
+    def create_adventure(cls, model: str, engine_size: int) -> typing.Self:
         return Motorcycle(model, MotorcycleType.adventure, engine_size, True)
 
 
