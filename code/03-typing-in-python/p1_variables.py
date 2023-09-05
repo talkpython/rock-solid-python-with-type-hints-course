@@ -92,22 +92,22 @@ print(unknown)
 unknown = {7, 8, 8}
 print(unknown)
 
+# ##########################################
+#
+# Constants *********************
+#
 
+not_const_1 = "Some value"
+print(not_const_1)
 
+not_const_1 = "Other value"
 
+CONST_2 = "Fixed value"  # Implicit, conventional constant
+print(CONST_2)
+CONST_2 = "No longer fixed!"  # Should have a warning, I guess?
 
+CONST_3: typing.Final = "Really a constant, sorta"  # Explicit constant in the type system.
+print(CONST_3)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+CONST_3 = "This should not change!"  # <- Error! In the type system.
+print(CONST_3)
