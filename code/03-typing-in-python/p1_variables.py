@@ -63,16 +63,19 @@ z3 = "ABC"  # <- Error!
 # Unions *********************
 #
 
+un1: typing.Union[int, str] = 1
+un2: int | str = 2
+un3: int | str = "Three"
 
+print(un1 + un2)
 
+un1 = "One"
+un2 = "Two"
+print(un1 + un2)
 
+un1 = [1, 1, 2]  # <- Error!
 
-
-
-
-
-
-
+# un1.casefold()
 
 
 
