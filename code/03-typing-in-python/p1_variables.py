@@ -77,5 +77,37 @@ un1 = [1, 1, 2]  # <- Error!
 
 # un1.casefold()
 
+# ##########################################
+#
+# What if you don't know the type? *********
+#
+
+unknown: typing.Any = 78
+# unknown: Any = 78
+print(unknown)
+
+unknown = "Seventy Eight!"
+print(unknown)
+
+unknown = {7, 8, 8}
+print(unknown)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
