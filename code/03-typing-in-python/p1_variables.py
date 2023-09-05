@@ -111,3 +111,44 @@ print(CONST_3)
 
 CONST_3 = "This should not change!"  # <- Error! In the type system.
 print(CONST_3)
+
+# ##########################################
+#
+# Beware Little Bobby Tables ****************
+# https://peps.python.org/pep-0675/
+#
+
+# Old way:
+# student_name: str = input("What is the student's name?")
+# student_name: str = "Robert Tables"
+# query: str = f"SELECT * FROM Students WHERE name ='{student_name}'"
+# print(query)
+#
+# student_name = "'; DROP TABLE Students; --"
+# query = f"SELECT * FROM Students WHERE name ='{student_name}'"
+# print(query)
+
+# New way:
+# student_name: str = input("What is the student's name?")
+student_name: typing.LiteralString = "Robert Tables"
+query: typing.LiteralString = f"SELECT * FROM Students WHERE name ='{student_name}'"
+print(query)
+
+student_name = "'; DROP TABLE Students; --"
+query = f"SELECT * FROM Students WHERE name ='{student_name}'"
+print(query)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
