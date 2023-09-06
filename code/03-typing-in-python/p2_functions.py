@@ -21,10 +21,10 @@ def main():
     x = say_hello("Sam")
     print(type(x), x)
 
-    use_function(lambda p1, p2: print(f"{p1}'s favorite number is {p2}."))
-    # use_function(lambda a: a*a)
-    use_function(usable_func1)
-    # use_function(usable_func2)
+    use_function_explicit(lambda p1, p2: print(f"{p1}'s favorite number is {p2}."))
+    # use_function(lambda a: a*a)  # <- Error and a crash.
+    use_function_explicit(usable_func1)
+    # use_function_explicit(usable_func2)  # <- Error and a crash.
 
 
 def usable_func1(name: str, num: int) -> None:
