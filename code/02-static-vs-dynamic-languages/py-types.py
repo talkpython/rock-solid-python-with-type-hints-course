@@ -14,6 +14,7 @@ class MotorcycleType(enum.StrEnum):
 
 
 class Motorcycle:
+    wheel_count: int = 2
 
     def __init__(self, model: str, style: MotorcycleType, engine_size: int, off_road: bool):
         self.off_road: bool = off_road
@@ -51,4 +52,4 @@ if __name__ == '__main__':
     print("Here are some bikes!")
     b: Motorcycle  # Not really needed.
     for b in bikes:
-        print(b)
+        print(b, b.wheel_count)
