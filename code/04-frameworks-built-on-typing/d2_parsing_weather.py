@@ -1,6 +1,5 @@
 from weather_models import WeatherForecast
 
-
 def main():
     data = {
         "weather":
@@ -10,18 +9,18 @@ def main():
             },
         "wind":
             {
-                "speed": "7.0",
+                "speed": 5.99,
                 "deg": 0
             },
         "units": "imperial",
         "forecast":
             {
-                "temp": 59.95,
-                "feels_like": 59.79,
+                "temp": 60.44,
+                "feels_like": 60.22,
                 "pressure": 1019,
-                "humidity": 88,
+                "humidity": 86,
                 "low": 56,
-                "high": 63
+                "high": "64"
             },
         "location":
             {
@@ -39,7 +38,7 @@ def main():
     w = WeatherForecast(**data)
     print(w)
 
-    print(f"Right now it's {w.forecast.temp:,.0f} F and {w.weather.description}.")
+    print(f"Right now it's {w.weather.description} and {w.forecast.temp:.0f} F degrees.")
 
 
 if __name__ == '__main__':
