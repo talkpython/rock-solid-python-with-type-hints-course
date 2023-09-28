@@ -1,1 +1,8 @@
 pydantic
+
+passlib
+argon2_cffi
+beanie
+fastapi
+jinja2
+uvicorn

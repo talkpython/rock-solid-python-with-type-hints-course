@@ -6,11 +6,62 @@
 #
 annotated-types==0.5.0
     # via pydantic
-pydantic==2.4.1
+anyio==3.7.1
+    # via
+    #   fastapi
+    #   starlette
+argon2-cffi==23.1.0
     # via -r requirements.piptools
+argon2-cffi-bindings==21.2.0
+    # via argon2-cffi
+beanie==1.22.6
+    # via -r requirements.piptools
+cffi==1.15.1
+    # via argon2-cffi-bindings
+click==8.1.7
+    # via
+    #   beanie
+    #   uvicorn
+dnspython==2.4.2
+    # via pymongo
+fastapi==0.103.1
+    # via -r requirements.piptools
+h11==0.14.0
+    # via uvicorn
+idna==3.4
+    # via anyio
+jinja2==3.1.2
+    # via -r requirements.piptools
+lazy-model==0.2.0
+    # via beanie
+markupsafe==2.1.3
+    # via jinja2
+motor==3.3.1
+    # via beanie
+passlib==1.7.4
+    # via -r requirements.piptools
+pycparser==2.21
+    # via cffi
+pydantic==2.4.1
+    # via
+    #   -r requirements.piptools
+    #   beanie
+    #   fastapi
+    #   lazy-model
 pydantic-core==2.10.1
     # via pydantic
+pymongo==4.5.0
+    # via motor
+sniffio==1.3.0
+    # via anyio
+starlette==0.27.0
+    # via fastapi
+toml==0.10.2
+    # via beanie
 typing-extensions==4.8.0
     # via
+    #   fastapi
     #   pydantic
     #   pydantic-core
+uvicorn==0.23.2
+    # via -r requirements.piptools
