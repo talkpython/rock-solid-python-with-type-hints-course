@@ -162,3 +162,4 @@ cython_debug/
 /code/02-static-vs-dynamic-languages/node_modules/.package-lock.json
 node_modules/
 /code/02-static-vs-dynamic-languages/mc
+/.ruff_cache/
