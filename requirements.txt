@@ -16,7 +16,7 @@ argon2-cffi-bindings==21.2.0
     # via argon2-cffi
 beanie==1.22.6
     # via -r requirements.piptools
-cffi==1.15.1
+cffi==1.16.0
     # via argon2-cffi-bindings
 click==8.1.7
     # via
@@ -24,7 +24,7 @@ click==8.1.7
     #   uvicorn
 dnspython==2.4.2
     # via pymongo
-fastapi==0.103.1
+fastapi==0.103.2
     # via -r requirements.piptools
 h11==0.14.0
     # via uvicorn
@@ -38,11 +38,15 @@ markupsafe==2.1.3
     # via jinja2
 motor==3.3.1
     # via beanie
+mypy==1.5.1
+    # via -r requirements.piptools
+mypy-extensions==1.0.0
+    # via mypy
 passlib==1.7.4
     # via -r requirements.piptools
 pycparser==2.21
     # via cffi
-pydantic==2.4.1
+pydantic==2.4.2
     # via
     #   -r requirements.piptools
     #   beanie
@@ -61,6 +65,7 @@ toml==0.10.2
 typing-extensions==4.8.0
     # via
     #   fastapi
+    #   mypy
     #   pydantic
     #   pydantic-core
 uvicorn==0.23.2

@@ -6,3 +6,5 @@ beanie
 fastapi
 jinja2
 uvicorn
+
+mypy
