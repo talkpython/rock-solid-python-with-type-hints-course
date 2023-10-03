@@ -16,6 +16,8 @@ argon2-cffi-bindings==21.2.0
     # via argon2-cffi
 beanie==1.22.6
     # via -r requirements.piptools
+beartype==0.16.2
+    # via -r requirements.piptools
 cffi==1.16.0
     # via argon2-cffi-bindings
 click==8.1.7

@@ -8,3 +8,4 @@ jinja2
 uvicorn
 
 mypy
+beartype
