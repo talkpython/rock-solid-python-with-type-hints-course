@@ -49,6 +49,7 @@ def collect_part2(count: int) -> int:
     return total
 
 
+@beartype
 def str_stuff(groups: list[str]):
     for _ in range(10_000):
         groups.append("This is a common sentence. " * 100)
