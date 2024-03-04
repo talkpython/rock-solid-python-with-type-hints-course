@@ -1,12 +1,12 @@
-from bike import Bike
+from motorbike import MotorBike
 
 
-def create_some_bikes() -> list[Bike]:
+def create_some_bikes() -> list[MotorBike]:
     motorcycles = [
-        Bike.create_adventure("Himalayan", 410),
-        Bike.create_adventure("Tenere", 700),
-        Bike.create_adventure("KTM", 790),
-        Bike.create_adventure("Norden", 901),
+        MotorBike.create_adventure("Himalayan", 410),
+        MotorBike.create_adventure("Tenere", 700),
+        MotorBike.create_adventure("KTM", 790),
+        MotorBike.create_adventure("Norden", 901),
     ]
 
     return motorcycles

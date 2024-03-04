@@ -13,7 +13,7 @@ class BikeType(enum.StrEnum):
     trail = "trail"
 
 
-class Bike:
+class MotorBike:
 
     def __init__(self, model: str, style: BikeType, engine_size: int, off_road: bool):
         self.model: str = model
@@ -27,7 +27,7 @@ class Bike:
 
     @classmethod
     def create_adventure(cls, model: str, engine_size: int) -> typing.Self:  # -> Motorcycle?
-        bike = Bike(model, BikeType.adventure, engine_size, off_road=True)
+        bike = MotorBike(model, BikeType.adventure, engine_size, off_road=True)
         return bike
 
     def __str__(self) -> str:
